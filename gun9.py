@@ -59,3 +59,8 @@ result = lambdaaa(10)
 numList=[10,20,30,40,50]
 
 list(map(lambda numm: num/4,numList))
+
+x=20
+def multiply(numm):
+    x = 5
+    return numm * x 
