@@ -9,10 +9,13 @@ class Person():
     
     def __init__(self,nameInput,ageInput,genderInput):
         self.name=nameInput
-        self.name=ageInput
-        self.name=genderInput
+        self.age=ageInput
         print("çalıştı")
 myList=list()
 
 atil =Person()
+
+
+
+
 
