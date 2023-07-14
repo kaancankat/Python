@@ -1,4 +1,11 @@
-class banana():
-    def __init__(self,name):
-        self.name = name
-     
+myVar = "Atil Samancioglu"
+
+def ornekFonksiyon():
+    myVar = "Atil"
+    
+    def digerFonksiyon():
+        print(myVar)
+    
+    digerFonksiyon()
+    
+ornekFonksiyon()

@@ -62,4 +62,59 @@
 #
 #fruitlist = [banana,apple]
 #for fruit in fruitlist:
-#    print(fruit.info())
+##    print(fruit.info())
+#
+#class phone():
+#    def __init__(self,name,price) -> None:
+#        self.name = name
+#        self.__price = price
+#    def info(self):
+#        print(f"{self.name} price is {self.__price}")
+#    def changePrice(self,price):
+#        self.__price = price
+#
+#iphone = phone("iphone 14" ,500)
+#iphone.info()
+#
+#iphone.__price= 400
+#iphone.info()
+#iphone.changePrice(400)
+#iphone.info()
+
+#from abc import ABC, abstractmethod
+#class Car(ABC):
+#    @abstractmethod 
+#    def maxSpeed(self):
+#        pass
+#
+#class tesla(Car):
+#    def maxSpeed(self):
+#        print("200km")
+#        
+#class Mercedes(Car):
+#    
+#    def maxSpeed(self):
+#        print("250km")
+#        
+#mercedes = Mercedes()
+#mercedes.maxSpeed()
+
+class fruit():
+    def __init__(self,name,calories):
+        self.name = name
+        self.calories =calories
+
+    def __str__(self):
+        return f"{self.name}: {self.calories} calories"
+    
+    def __len__(self):
+        return self.calories
+    
+    
+    
+myFruit = fruit("banana",150)
+myFruit.calories
+myFruit.name
+print(myFruit)
+
+print(len(myFruit))
