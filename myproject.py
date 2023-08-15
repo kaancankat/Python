@@ -36,6 +36,10 @@ my_label.pack()
 my_entry=Entry(width=20)
 my_entry.pack()
 
+sonuclabel= Label(text=int(kitleindex), font="ariel")
+sonuclabel.config(pady=20)
+sonuclabel.pack()
+
 def buttonclicked():
     boy = int(my_entry.get())
     kilo = int(my_entry2.get())    
@@ -45,10 +49,10 @@ def buttonclicked():
     
     kitleindex= kilo**2 / boy
     print(int(kitleindex)) 
-
-    sonuclabel= Label(text=int(kitleindex), font="ariel")
-    sonuclabel.config(pady=20)
-    sonuclabel.pack()
+    
+    if boy <= 0 or kilo <= 0:
+        sonuclabel.config(text="Geçerli boy ve kilo girin")
+        return
                       
 
 
