@@ -47,6 +47,7 @@ def buttonclicked():
     if boy and kilo != int:
         print("lütfen sayı giriniz")
     
+    
     kitleindex= kilo**2 / boy
     print(int(kitleindex)) 
     
