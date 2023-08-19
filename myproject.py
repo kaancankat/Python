@@ -36,7 +36,7 @@ my_label.pack()
 my_entry=Entry(width=20)
 my_entry.pack()
 
-sonuclabel= Label(text=int(kitleindex), font="ariel")
+sonuclabel= Label(text=int(global(kitleindex)), font="ariel")
 sonuclabel.config(pady=20)
 sonuclabel.pack()
 
@@ -48,21 +48,18 @@ def buttonclicked():
         print("lütfen sayı giriniz")
     
     
+        
     kitleindex= kilo**2 / boy
     print(int(kitleindex)) 
+
     
-    if boy <= 0 or kilo <= 0:
-        sonuclabel.config(text="Geçerli boy ve kilo girin")
-        return
-                      
-
-
 
 #button
 my_button=Button(text="hesapla",command=buttonclicked)
 my_button.config(width=10,font="ariel")
 my_button.config(padx=10,pady=10)
 my_button.pack()
+
 
 
 window.mainloop()
