@@ -3,13 +3,13 @@ import pyautogui as pg
 import time
 import pyautogui 
 
-words = ("enayi","emre","agla","lolcu","hayatsiz")
+words = ("okul diyen dayi","okula 7 gün var")
 
-time.sleep(5)   
+time.sleep(8)   
 
 for i in range(20):
     a = random.choice(words)
-    pg.write("sen"  " "  + a)
+    pg.write(a)
     pg.press("enter")
         
    #if pyautogui.press("esc"):
