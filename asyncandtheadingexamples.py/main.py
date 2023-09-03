@@ -1,5 +1,7 @@
+from collections.abc import Callable, Iterable, Mapping
 import time
 import asyncio
+from typing import Any
 import requests
 import aiohttp
 import threading
@@ -13,6 +15,15 @@ def get_data_sync(urls):
     elapsed_time = et - st
     print('Execution time:', elapsed_time, 'seconds')
     return json_array
+
+class ThreadingDowlander(threading.Thread):
+    def __init__(self):
+        super.__init__()
+           
+    def run(self):
+        response = requests.get("")
+        self.json_array.append(response)
+        return response.json()
 
 
 urls = ['https://postman-echo.com/delay/3'] * 10
