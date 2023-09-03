@@ -13,6 +13,4 @@ for i in range(20):
     pg.press("enter")
         
    #if pyautogui.press("esc"):
-        
-    
-    
+       
